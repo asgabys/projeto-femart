@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+}
+
+header {
+    background: #d6b934;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    gap: 15px;
+}
+
+nav button {
+    padding: 10px 20px;
+    border: none;
+    background: #d6b934;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+nav button:hover {
+    background: #b69d2e;
+}
+
+.secao {
+    display: none;
+    padding: 20px;
+}
+
+.secao.ativa {
+    display: block;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    max-width: 400px;
+}
+
+.card img {
+    width: 330%;
+    border-radius: 40px;
+
+}
+
+form {
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #000000;
+}
+
+#listaAvaliacoes {
+    margin-top: 60px;
+}
+
+.avaliacao {
+    background: white;
+    padding: 12px;
+    border-left: 4px solid #d6b934;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.estrelas input[type=radio] {
+  display: none;
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}

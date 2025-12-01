@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Turismo Brasil</title>
+    <link rel="stylesheet" href="inicio.css" />
+</head>
+<body>
+
+<header>
+    <h1>Femart Turismo</h1>
+    <p>Conheça as praias mais bonitas do nordeste!</p>
+</header>
+
+<nav>
+    <button onclick="mostrarSecao('destinos')">Destinos</button>
+    <button onclick="mostrarSecao('avaliacoes')">Avaliações</button>
+</nav>
+
+<section id="destinos" class="secao ativa">
+    <h2>Praias mais procuradas</h2>
+
+    <div class="card">
+        <img src="morro branco.avif" />
+        <h3>Morro Branco</h3>
+        <p>O lugar chama atenção por suas lindas falésias coloridas.</p>
+        <button onclick="alert('Mais informações em breve!')">Saiba mais</button>
+    </div>
+
+    <div class="card">
+        <img src="cumbuco.avif" />
+        <h3>Praia do Cumbuco</h3>
+        <p>Uma das praias mais procuradas na região metropolitana.</p>
+        <button onclick="alert('Mais informações em breve!')">Saiba mais</button>
+    </div>
+
+    <div class="card">
+        <img src="Jericuacuara.avif" />
+        <h3>Jericoacoara</h3>
+        <p>Paraíso escondido / Paraíso do Brasil.</p>
+        <button onclick="alert('Mais informações em breve!')">Saiba mais</button>
+    </div>
+
+     <div class="card">
+        <img src="canoa quebrada.avif" />
+        <h3>Canoa Quebrada</h3>
+        <p>Conheça um dos locais mais visitados do Ceará.</p>
+        <button onclick="alert('Mais informações em breve!')">Saiba mais</button>
+    </div>
+
+    
+     <div class="card">
+        <img src="caponga.avif" />
+        <h3>Caponga</h3>
+        <p>Uma praia bastante tranquila.</p>
+        <button onclick="alert('Mais informações em breve!')">Saiba mais</button>
+    </div>
+
+</section>
+
+<section id="avaliacoes" class="secao">
+    <h2>Vamos avaliar?</h2>
+
+    <form id="formAvaliacao">
+        
+        <input type="text" id="nome" placeholder="Seu nome" required />
+
+          <h2>Deixe sua Avaliação</h2>
+
+        <textarea id="comentario" placeholder="Seu comentário" required></textarea>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="estrelas">
+  <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+  <label for="cm_star-1"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-1" name="fb" value="1"/>
+  <label for="cm_star-2"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-2" name="fb" value="2"/>
+  <label for="cm_star-3"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-3" name="fb" value="3"/>
+  <label for="cm_star-4"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-4" name="fb" value="4"/>
+  <label for="cm_star-5"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-5" name="fb" value="5"/>
+</div>
+
+        <button type="submit">Enviar Avaliação</button>
+    </form>
+
+    <h3>Avaliações dos Usuários:</h3>
+    <div id="listaAvaliacoes"></div>
+</section>
+
+<script src="inicio.js"></script>
+
+</body>
+</html>
+

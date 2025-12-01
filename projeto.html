@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praias do Brasil</title>
+    <link rel="stylesheet" href="projeto.css">
+</head>
+<body>
+
+<header>
+    <h1>🏖️ Praias do Brasil</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Explore as Melhores Praias do Brasil</h2>
+    <p>Veja avaliações, comentários e compartilhe sua experiência.</p>
+</section>
+
+<section class="praias">
+    <h2>Destinos Populares</h2>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+        <h3>Praia dos Carneiros - PE</h3>
+        <p>Águas cristalinas e paisagem paradisíaca.</p>
+
+        <div class="estrelas" data-id="1"></div>
+
+        <textarea placeholder="Escreva seu comentário..." class="comentario" data-id="1"></textarea>
+        <button onclick="enviarComentario(1)">Enviar</button>
+
+        <div class="lista-comentarios" id="comentarios-1"></div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" alt="">
+        <h3>Jericoacoara - CE</h3>
+        <p>Pôr do sol incrível e vilarejo acolhedor.</p>
+
+        <div class="estrelas" data-id="2"></div>
+
+        <textarea placeholder="Escreva seu comentário..." class="comentario" data-id="2"></textarea>
+        <button onclick="enviarComentario(2)">Enviar</button>
+
+        <div class="lista-comentarios" id="comentarios-2"></div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="">
+        <h3>Porto de Galinhas - PE</h3>
+        <p>Piscinas naturais e águas quentes.</p>
+
+        <div class="estrelas" data-id="3"></div>
+
+        <textarea placeholder="Escreva seu comentário..." class="comentario" data-id="3"></textarea>
+        <button onclick="enviarComentario(3)">Enviar</button>
+
+        <div class="lista-comentarios" id="comentarios-3"></div>
+    </div>
+</section>
+
+<footer id="contato">
+    <p>© 2025 Praias do Brasil - Criado no VSCode</p>
+</footer>
+
+<script src="projeto.js"></script>
+</body>
+</html>
+
